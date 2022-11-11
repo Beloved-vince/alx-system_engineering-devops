@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # A display script in n times
-# spell check dummy test
 
-i = 0
+i=0
 while ((i < 10))
 do
 	echo 'Best School';
