@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Display both the PID and cmd name
+# Display both the PID and cmd name.
 
-pgrep -u vince -l
+pgrep -l bash
