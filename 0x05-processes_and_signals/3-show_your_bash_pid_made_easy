@@ -2,4 +2,4 @@
 # display both the PID and cmd name.
 #+ and return  the resective
 
-pgrep -u vince -l
+pgrep -l bash
