@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script display all current running processes
 # Displat the list of current running process
-# display in user-oriented
+#+  which might not have a TTY.
 
 ps -aux
