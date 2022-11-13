@@ -3,18 +3,19 @@
 # Also return a message after error encounter
 # Finally terminate at final call of deleting script
 
-rm_file()
+rmfile_n_exit()
 {
-	rm -f /var/run/myscript.pid;
-	exit
+    rm -f /var/run/myscript.pid;
+    exit
 }
-echo '$$' > /var/run/script.pid
+trap "echo 'Y U no love me?!'" SIGINT
+trap "echo 'I hate the kill command'; rmfile_n_exit" SIGTERM
+trap "echo 'I hate the kill command'; rmfile_n_exit" SIGQUIT
 
-while true;
+
+echo $$ >> /var/run/myscript.pid
+while (true)
 do
-	echo "To infinity beyond"
-	sleep 2
-	trap 'echo "I hate the kill command"' 15
-	trap 'echo "Y U no love me?!"' 2
-	trap 'rm_file' 3
+    echo 'To infinity and beyond'
+    sleep 2
 done
