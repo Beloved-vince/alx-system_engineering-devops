@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script will iterate continuosly
+#+ but will return a new message after interruption
+
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "I am invincible!!!"' 15
+done

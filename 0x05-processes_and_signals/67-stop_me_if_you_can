@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script terminate the process giving using
+#+ pkill
+
+pkill -f "7-highlander"
