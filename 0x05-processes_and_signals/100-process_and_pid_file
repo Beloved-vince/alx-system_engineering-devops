@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script create a file that generate its PID
+# Also return a message after error encounter
+# Finally terminate at final call of deleting script
+
+while true;
+do
+	echo "To infinity beyond"
+	sleep 2
+	trap 'echo "I hate the kill command"' 15
+	trap 'echo "Y U no love me?!"' 2
+done
