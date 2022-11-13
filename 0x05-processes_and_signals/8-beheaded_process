@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A script to kill process of an external file
+
+pkill -9 -f "7-highlander" 
