@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-#This script get repetitive token
+# Only htn hbtn
 
 puts ARGV[0].scan(/hb?tn/).join
