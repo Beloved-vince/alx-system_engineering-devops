@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # pwd all files in list script
 
-files='$(ls)'
-for file in $files;
-do
-	echo "$file" | cut -d '-' -f2
+list=$(ls)
+for i in $list; do
+  echo "$i" | cut -d '-' -f2
 done
