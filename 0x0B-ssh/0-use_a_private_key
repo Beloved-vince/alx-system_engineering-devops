@@ -1,4 +1,9 @@
 #!/bin/bash
-# Connect to server using private key and user ubuntu
 
-ssh -i ~/.ssh/school ubuntu@98.98.98.98
+# Assign the variables for the server, key file, and user
+server="8.8.8.8"
+key_file="~/.ssh/school"
+user="ubuntu"
+
+# Connect to the server using ssh with the specified key file and user
+ssh -i $key_file -o user=$user $server
