@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Create RSA key pair
 # RSA Format
 # Number of bit to be generated
