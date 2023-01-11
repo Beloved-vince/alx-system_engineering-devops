@@ -3,3 +3,4 @@
 # key ~/.ssh/holberton with the user ubuntu
 
 ssh ubuntu@34.74.113.114 -i ~/.ssh/known_hosts
+
