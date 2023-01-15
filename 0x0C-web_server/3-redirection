@@ -22,4 +22,4 @@ sudo ln -s /etc/nginx/sites-available/redirect /etc/nginx/sites-enabled/
 sudo nginx -t
 
 # Restart Nginx to apply the new configuration
-sudo systemctl restart nginx
+sudo service  restart nginx
