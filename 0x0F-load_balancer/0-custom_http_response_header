@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configure a new ubuntu machine
+# Configure a new ubuntu machine and Nginx
 
 sudo apt-get update
 sudo apt-get install -y nginx
