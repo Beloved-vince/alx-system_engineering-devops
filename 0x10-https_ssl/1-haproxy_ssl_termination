@@ -34,12 +34,12 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 
 frontend myfrontend
-	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/www.globalvincesolutions.tech.pem
-	http-request redirect scheme https code 301 if { hdr(Host) -i www.globalvincesolutions.tech } !{ ssl_fc }
-	default_backend myservers
+        bind *:80
+        bind *:443 ssl crt /etc/haproxy/certs/www.globalvincesolutions.tech.pem
+        http-request redirect scheme https code 301 if { hdr(Host) -i www.globalvincesolutions.tech } !{ ssl_fc }
+        default_backend myservers
 
 backend myservers
-	balance roundrobin
-	server web-01 100.26.152.67:80 check
-	server web-02 18.207.3.106:80 check
+        balance roundrobin
+        server web-01 100.26.152.67:80 check
+        server web-02 18.207.3.106:80 check
